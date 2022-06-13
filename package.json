@@ -20,7 +20,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "server": "json-server --watch db.json --port 5050",
+    "server": "node server.js --watch db.json --port 5050",
     "dev": "concurrently \"npm run server\" \"npm start\"",
     "start": "react-scripts start ",
     "build": "react-scripts build",
