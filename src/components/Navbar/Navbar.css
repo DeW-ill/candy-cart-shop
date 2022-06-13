@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  height: 7rem;
+  border-bottom: 1px solid rgba(172, 172, 172, 0.459);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  z-index: 1000;
+}
+
+.header .title {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+nav {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon__cart__mobile {
+  display: none;
+  color: #191a1b;
+}
+
+.icon__cart__mobile:hover {
+  color: #39393a;
+}
+.icon__cart {
+  margin-right: -5rem;
+  visibility: visible;
+  opacity: 1;
+  color: #191a1b;
+}
+nav .link-to {
+  margin: 0 3rem;
+  color: #191a1b;
+  text-decoration: none;
+}
+nav .link-to:hover {
+  color: #39393a;
+}
+
+header .nav-btn {
+  padding: 8px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+  transition: 0.3s ease;
+}
+
+@media only screen and (max-width: 768px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 2rem; */
+    background-color: #bdbdbd;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: 0.2s;
+    transform: translatex(100vw);
+    z-index: 1000;
+  }
+
+  header .responsive__nav {
+    transform: none;
+  }
+  nav .link-to {
+    justify-content: center;
+    margin-bottom: 10rem;
+  }
+  nav .close__nav_btn {
+    position: absolute;
+    top: 2rem;
+    right: 2.2rem;
+  }
+  .icon__cart__mobile {
+    display: block;
+    margin-top: 1rem;
+  }
+  .icon__cart {
+    margin-right: 2rem;
+  }
+}
