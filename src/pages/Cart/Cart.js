@@ -2,6 +2,8 @@ import React from "react";
 import { useCart } from "react-use-cart";
 import { Link } from "react-router-dom";
 
+import "./Cart.css";
+
 import RemoveCircleIcon from "@mui/icons-material/RemoveCircle";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import DeleteIcon from "@mui/icons-material/Delete";
@@ -23,7 +25,7 @@ const Cart = () => {
     if (cartTotal >= 1000) {
       return (
         <>
-          <div className=" bg-success justify-content-center text-center align-items-center  bg-opacity-50 rounded-pill">
+          <div className=" offer-message">
             <p className=" py-1">Parabéns, sua compra tem frete grátis</p>
           </div>
         </>

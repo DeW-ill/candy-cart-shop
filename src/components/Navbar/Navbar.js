@@ -22,16 +22,18 @@ const Navbar = (props) => {
         </Link>
       </div>
       <nav ref={navRef}>
-        <Link to="/" className="link-to" onClick={showNavbar}>
-          store
-        </Link>
+        <div className="nav-items">
+          <Link to="/" className="link-to" onClick={showNavbar}>
+            store
+          </Link>
 
-        <button className="nav-btn close__nav_btn" onClick={showNavbar}>
-          <CloseIcon />
-        </button>
-        <Link className="icon__cart link-to" to="/cart" onClick={showNavbar}>
-          {props.badge}
-        </Link>
+          <button className="nav-btn close__nav_btn" onClick={showNavbar}>
+            <CloseIcon />
+          </button>
+          <Link className="icon__cart link-to" to="/cart" onClick={showNavbar}>
+            {props.badge}
+          </Link>
+        </div>
       </nav>
       <button className="nav-btn" onClick={showNavbar}>
         <MenuIcon />

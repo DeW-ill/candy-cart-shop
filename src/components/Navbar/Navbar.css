@@ -96,12 +96,18 @@ header .nav-btn {
     z-index: 1000;
   }
 
+  .nav-items {
+    margin-bottom: 50rem;
+    display: flex;
+    flex-direction: column;
+  }
+
   header .responsive__nav {
     transform: none;
   }
   nav .link-to {
     justify-content: center;
-    margin-bottom: 10rem;
+    margin-bottom: 1.5rem;
   }
   nav .close__nav_btn {
     position: absolute;
