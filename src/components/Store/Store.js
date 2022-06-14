@@ -21,6 +21,8 @@ export class Store extends React.Component {
                 ean={item.ean}
                 item={item}
                 key={index}
+                className="card-img-top img-fluid rounded"
+                alt=""
               />
             ))}
           </div>

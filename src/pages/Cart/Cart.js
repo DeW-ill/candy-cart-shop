@@ -74,7 +74,7 @@ const Cart = () => {
                           <div className="card-body ">
                             <h5 className="card-title ">{item.name}</h5>
                             <p className="card-text ">
-                              Quantity: ({item.quantity})
+                              Número de items: ({item.quantity})
                             </p>
                             <p className="card-text">
                               <small className="text-muted">
