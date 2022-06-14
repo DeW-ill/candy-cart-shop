@@ -51,7 +51,7 @@ const Cart = () => {
       </>
     );
   return (
-    <section className="py-4 container position-relative">
+    <section className="py-4 container ">
       <div className="row justify-content-center">
         <div className="col-8 justify-content-right">
           <h5>Total Items: ({totalItems}) </h5>

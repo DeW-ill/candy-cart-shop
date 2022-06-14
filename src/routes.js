@@ -14,7 +14,7 @@ export default function Routers() {
       {/*Rota Home*/}
       <Routes>
         <Layout>
-          <Route exact path="/">
+          <Route exact path="/home">
             <Home />
           </Route>
         </Layout>
