@@ -8,9 +8,9 @@ import "./ItemCard.css";
 const ItemCard = (props) => {
   const { addItem } = useCart();
   return (
-    <div className=" card-container">
-      <div className="card-item">
-        <div className="card-img-container">
+    <div className=" card_container">
+      <div className="card_item">
+        <div className="card_img_container">
           <img src={props.imageUrl} className="card-img" alt="" />
         </div>
         <div className="card-body">

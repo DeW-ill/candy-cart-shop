@@ -9,14 +9,15 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.card-container {
+.card_container {
   width: 328.3px;
   padding: 0.5rem;
   display: flex;
   justify-content: center;
+  max-height: 450px;
 }
 
-.card-item {
+.card_item {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -24,7 +25,11 @@
 
   border: 1px solid #777;
 }
-.card-img-container {
+.card_img_container {
   width: 250px;
   margin: auto;
+}
+
+.card-img {
+  overflow: hidden;
 }

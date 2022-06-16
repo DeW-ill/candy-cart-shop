@@ -1,8 +1,12 @@
 .offer-message {
-  width: 80%;
+  width: 100%;
   margin: auto;
   background: #c7ffa6;
   border-radius: 20px;
   text-align: center;
   color: #2a8109;
+}
+
+.offer_text {
+  font-size: 14px;
 }

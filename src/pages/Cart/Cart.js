@@ -26,7 +26,7 @@ const Cart = () => {
       return (
         <>
           <div className=" offer-message">
-            <p className=" py-1">Parabéns, sua compra tem frete grátis</p>
+            <p className="offer_text">Parabéns, sua compra tem frete grátis</p>
           </div>
         </>
       );
@@ -53,9 +53,9 @@ const Cart = () => {
       </>
     );
   return (
-    <section className="py-4 container ">
+    <section className="py-5 container ">
       <div className="row justify-content-center">
-        <div className="col-8 justify-content-right">
+        <div className="col-10 justify-content-right">
           <h5>Total Items: ({totalItems}) </h5>
 
           <table className="table table-responsive">
@@ -63,7 +63,7 @@ const Cart = () => {
               {items.map((item, index) => {
                 return (
                   <tr key={index}>
-                    <div className="card mb-3 mw-60  ">
+                    <div className="card mb-3 mw-65  ">
                       <div className="row g-0">
                         <div className="col-md-4 d-flex justify-content-center align-items-center">
                           <img
